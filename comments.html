@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="websystems.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/UTSLogo.png" alt="UTS Logo" class="logo">
+            </div>
+
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="past.html">Past</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="comments.html" class="active">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fade-in-content">
+        <div class="flex-container-header">
+            <h1 class="mainheader">Comments</h1>
+        </div>
+
+        <div class="comments-content-container">
+            <div>
+                <h1>Overall Structure of my Website</h1>
+                <p>The website is Structured into 4 html pages each focusing on differnet aspects of my experience and
+                    goals
+                    with computer science. 
+                </p>
+                <p>The pages interact with
+                    eachother through the navigation bar at the top of the page. The pages are styled using a css file
+                    that
+                    is linked to each page.</p>
+            </div>
+
+            <div>
+                <h1>The Interal Sutrcutre of Each Web Page</h1>
+                <ul class="comments-list">
+                    <li>Each page is structured with a header, main content and a footer.</li>
+                    <li>The header contains the navigation bar and the logo of UTS.</li>
+                    <li>The main content contains the main information of the page.</li>
+                    <li>The footer contains the author of the page and the university.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>Description of the Styles Used</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Type of Selector</th>
+                            <th>Style Description</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>nav</code></td>
+                            <td>Element Selector</td>
+                            <td>Defines the navigation bars background color, padding, and alignment.</td>
+                            <td>Navigation Bar</td>
+                        </tr>
+                        <tr>
+                            <td><code>.mainheader</code></td>
+                            <td>Class Selector</td>
+                            <td>Applies a large font size and centers the header text.</td>
+                            <td>Header on All Pages</td>
+                        </tr>
+                        <tr>
+                            <td><code>.fade-in-content</code></td>
+                            <td>Class Selector</td>
+                            <td>Uses <code>@keyframes</code> to fade in the content on page load.</td>
+                            <td>Applied to main content</td>
+                        </tr>
+                        <tr>
+                            <td><code>.flex-container-header</code></td>
+                            <td>Class Selector</td>
+                            <td>Flexbox layout for the header to center the title.</td>
+                            <td>Header Section</td>
+                        </tr>
+                        <tr>
+                            <td><code>.past-content-container</code></td>
+                            <td>Class Selector</td>
+                            <td>Flexbox layout for content container on the "Past" page.</td>
+                            <td>Past Page Content</td>
+                        </tr>
+                        <tr>
+                            <td><code>.img-container</code></td>
+                            <td>Class Selector</td>
+                            <td>Defines image and text layout for the TAFE image section.</td>
+                            <td>"Past" Page Image Section</td>
+                        </tr>
+                        <tr>
+                            <td><code>table</code></td>
+                            <td>Element Selector</td>
+                            <td>Styles for table borders, text alignment, and spacing.</td>
+                            <td>Academic Records Table</td>
+                        </tr>
+                        <tr>
+                            <td><code>footer</code></td>
+                            <td>Element Selector</td>
+                            <td>Fixed at the bottom of the page with a background color.</td>
+                            <td>Footer Section</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h1> Discussion of the graphic Design Aspects of the Website</h1>
+                <p><strong>Flexbox Layout:</strong> I used flexbox throughout the site for organizing content. Flexbox
+                    is highly responsive, which ensures that elements adjust smoothly based on screen size. This helps
+                    in creating a flexible and user-friendly design.</p>
+                <p><strong>Two-Column Layout:</strong> On the "Past" page, I used a two-column layout, placing the
+                    text content on the left and the image on the right. This makes the content balanced and easy to
+                    read.</p>
+                <p><strong>Tables:</strong> The academic records are presented in a clear and organized table, which
+                    allows users to easily view and compare the information.</p>
+
+                <h3>Colors:</h3>
+                <p>I used a <span>black background</span> for the navigation bar and footer to create contrast
+                    with the white text, improving readability.</p>
+                <p>The main content area uses a light background, creating a pleasant contrast with the darker
+                    elements, ensuring that the text is easy to read.</p>
+
+                <h3>Typeface:</h3>
+                <p>I used a standard web-safe font, <strong>Arial</strong>, for the text to ensure compatibility
+                    across different browsers and devices.</p>
+                <p>The headings (<code>&lt;h1&gt;</code>) have larger fonts to create emphasis and structure.</p>
+
+            </div>
+
+            <div>
+                <h1>Discussion of the HTML alt Tag</h1>
+                <p>The alt tag is used within the img tag to describe images for accessibility reasons.
+                    It provides a text description of the image for users who rely on screen readers,
+                    making the site more accessible to individuals with visual impairments. </p>
+            </div>
+
+            <div>
+                <h1>How the site Will Work Without CSS</h1>
+                <p>When CSS is disabled, the page structure will still be readable, but the layout will not have the
+                    same styling effects. For instance:</p>
+                <ul class="comments-list">
+                    <li>The navigation bar will no longer have a black background and white text; it will display the
+                        default browser styles.</li>
+                    <li>The flexbox layout will be ignored, and the content will be stacked vertically.</li>
+                    <li>The page will lose the visual appeal provided by CSS effects like hover animations, the fade-in
+                        effect, and the two-column layout.</li>
+                </ul>
+                <p>Despite this, <span id="comments-important-content">the pages content will still be visible</span>, and the text will be readable, ensuring that
+                    the site remains functional even without CSS.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer-flex-container">
+        <div class="footer-content-container">
+            <p class="footer-content">By xxx | University of Technology, Sydney | Autumn Semester 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

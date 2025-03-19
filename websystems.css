@@ -1,0 +1,307 @@
+/* Footer CSS */
+.footer-flex-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: black;
+    padding: 10px;
+  
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+}
+
+
+.footer-content {
+    color: white;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* General CSS */
+body {
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    position: relative;
+    min-height: 100vh;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); 
+    opacity: 1;
+    animation: overlayFadeOut 1.5s ease-in forwards; 
+    pointer-events: none; 
+}
+
+span{
+    font-weight: bold;
+}
+
+#comments-important-content{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@keyframes overlayFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; 
+    padding-bottom: 70px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    height: 40px; 
+    margin-left: 20px; 
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.nav li {
+    margin-left: 20px; 
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* Homepage CSS */
+.flex-container-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.flex-container-img-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.homepage-image {
+    width: 800px;
+}
+
+.flex-container-content {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.mainheader {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0; 
+    border-bottom: 4px solid #000000;
+}
+
+h1, h2, h3 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container-table {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tafe-image {
+    height: auto;
+    flex-shrink: 0; 
+}
+.comments-list{
+    list-style-type: none;
+    
+}
+
+.img-text {
+    text-align: center;
+}
+
+.past-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.past-content {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+.index-content {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+/* Past CSS */
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.workexp-container {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+
+.academic-record-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.past-list-item{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Future CSS */
+.future-content{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.future-content-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 5px;
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+/* Comments CSS */
+.comments-content-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 5px;
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
