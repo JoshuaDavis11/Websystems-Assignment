@@ -4,8 +4,6 @@
     align-items: center; 
     justify-content: center; 
     background-color: black;
-    padding: 10px;
-  
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -221,6 +219,9 @@ caption {
     text-align: center;
 }
 
+.past-content-container-text-record{
+    padding-right: 10px;
+}
 .past-content-container {
     display: flex;
     justify-content: center;
